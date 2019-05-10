@@ -1,5 +1,7 @@
 # MS-IS-Masters-Paper
-The paper I wrote to complete my MSIS at University of Nevada, Reno. I used Visual Studio along with R Tools for Visual Studio to write the markdown and associated R code. The tools and document generation process were as much of a learning experience as the content of the paper. I think it turned out rather well!
+The paper I wrote to complete my MSIS at University of Nevada, Reno. I used Visual Studio along with R Tools for Visual Studio to write the markdown and associated R code. Unfortunately, I had not discovered the tidyverse at the time so my R code is a bit messy. 
+
+The tools and document generation process were as much of a learning experience as the content of the paper. I think it turned out rather well!
 
 ## Abstract
 
