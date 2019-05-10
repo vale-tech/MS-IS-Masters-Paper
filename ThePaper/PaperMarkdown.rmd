@@ -1,0 +1,138 @@
+---
+title: "Impact of IT Plans With a Focus on Reducing Medical Errors on Common Patient Safety and Hospital Acquired Condition Metrics"
+author: "Vale R. Trujillo"
+header-includes:
+    - \usepackage{setspace}\onehalfspacing
+output: pdf_document
+bibliography: "C:/Users/Vale/Google Drive/School/Masters Project/ThePaper/ThePaper/paperbib.bib"
+link-citations: true
+---
+```{r include=FALSE}
+
+#####END DATA CONSTRUCTION
+```
+
+### Abstract
+Information technology is being heavily utilized in the healthcare industry to reduce the rate of medical errors that may occur during delivery of care. Medical errors are currently measured using a variety of Patient Safety and Hospital Acquired Condition metrics. These metrics can be employed to compare the quality of care delivered by hospitals and by government agencies to provide payment incentives. This research determines the impact of an IT strategic goal that is committed to reduce medical errors on several commonly used metrics and finds little to no effect on the metric scores obtained.
+
+\newpage
+
+### Introduction
+Medical errors can be defined as "an act of ommission or commission in planning or execution that contributes or could contribute to an unintended result" [@GroberBohnen2005]. Medical errors are an unreported, yet major cause of death within the United States and the number of deaths is estimated to be as high as 250,000 per year in the US between 2000 and 2008 [@Makaryi2139]. 
+
+An often-cited benefit of the proliferation of information technology systems such as electronic health records, computerized provider order entry systems, and healthcare information exchanges in healthcare is the potential for those systems to improve patient safety through the reduction and prevention of medical errors [@Restuccia2012]. These systems, when present, may be incomplete or lacking functions and features that allow for the greatest chance to reduce medical errors [@Menachemi2007]. Consequently, the potential for benefit creates a persistent theme within the hospital IT market to implement or improve information technology systems and processes that can help to reduce medical errors across all hospital units [@himss20132013]. 
+
+Research to determine the degree to which information technology improves or hinders patient safety is ongoing and continues to bear fruit as information technology proliferates through the healthcare system and becomes more heavily integrated [@Nimkar2016], despite the existence non-technological barriers such as cultural resistance and inadquate business cases [@Shortliff2005].
+
+Previous works that explored information technology’s impact on healthcare quality provided encouraging results. In McCullough’s paper, they measured changes in six process quality measures following adoption of health IT systems from 2004 to 2007. These measures included the percentage of heart failure patients given an ACE inhibitor or angiotensin receptor blocker for left ventricular systolic dysfunction, the percentage of smokers with heart failure and pneumonia given a smoking cessation device, the percentage of pneumonia patients provided a vaccine, the percentage of pneumonia patients given an initial blood culture prior to the administration of antibiotics, and the percentage of pneumonia patients given the most appropriate vaccination [@McCulloughCaseyMoscovicePrasad2010]. McCullough’s team used three data sources in their study: The American Hospital Association’s (AHA’s) annual survey, the Health Information and Management Systems Society (HIMSS) Analytics database, and the Centers for Medicare and Medicaid Services (CMS) Hospital Compare database. Results of their paper suggested that health IT systems are able to significantly improve the quality of healthcare.
+
+Similarly, Restuccia and colleagues conducted multiple surveys to determine the association between various health ITs and the improvement in hospital performance measures. The first survey used was the Quality Improvement Activities Survey (QAS), which was presented to the hospital’s chief quality officer (CQO) or designated lead quality manager. This survey aimed to accumulate information about the nature and degree of quality improvement activities embarked upon as well as their effect on patient care quality.  The second survey was the Clinicians’ Perceptions of Quality Survey (CPS), which was intended for physicians and nurses to provide their evaluation of patient care quality at their hospital. The sample contained 401 hospitals that submitted surveys in 2004, which represented 9 percent of the population from which they were drawn. Included in their analysis were only hospitals that had a response from the CQO and responses to the CPS from at least three leading clinicians [@Restuccia2012]. Their results revealed that hospitals with high levels of health IT implementation were related to statistically significant improvements in patient care quality.
+
+One study has shown that organizational leadership that fosters a culture of reducing medical errors can be effective, and that preventative systems are more effective than corrective systems [@Lee2016]. Formulation and implementation of an IT strategic plan can be considered one component of this organizational leadership. The analysis conducted for this research paper seeks to contribute to the existing body of knowledge by examining the impact of an IT strategic plan with a stated goal of reducing medical errors on publically reported Patient Safety Indicators (PSI) and scores utilized for the Hospital Acquired Condition Reduction program. Of particular note is the PSI-90 composite measure which combines and weights multiple PSI to create a composite score representing patient safety effectiveness within a healthcare organization. The wide range of coverage provided by this metric makes it a very suitable indicator to help determine the impact of a general IT strategic goal on reducing medical errors. In addition, we examine the effects of an IT strategic goal to reduce medical errors through analysis of of the aggregated Domain 2 score and the overrall Total Hospital Acquired Condition score  This metric is used directly to determine a hospital's eligibility for Medicare reimbursement reduction under the Hospital Acquired Condition Reduction Program (HACRP) administered by the Centers for Medicare and Medicaid Services (CMS) [@cms:HACRPOverview].
+
+Much of the existing reserach focuses on the level of technology implementation or the capabilities of those systems within a specific environment. The objective of this paper is to further the investigation of the impact on patient safety through hospitals’ use of health IT systems to determine if an IT strategic goal dedicated to reducing medical errors has any impact on commonly reported indicators of patient safety and quality. 
+
+The contents of this paper is structured as follows. Section 1 provides an overview and discussion of the data sources utilized for this research Section 2 is a brief discussion and overview of the commonly used PSI and an overview of the metrics used with the HACRP program, including how these metrics are calculated and reported. Section 3 is is a summary of the analysis methods utilized in this research and the results of those findings. Section 4 and 5 provide some final conclusion and thoughts on the result of this research as well as some noted limitations and opportunities for further research.
+
+
+### 1 Data and Methods
+This research used two primary sources of data for the analysis - the HIMSS Analytics Database (formerly the Dorenfest Complete Integrated Healthcare Delivery System Plus IHDS+) database for the years 2009 to 2012 [@dorenfest], and the Hospital Compare dataset [@hospitalcompare] avaliable for calendar year 2015.  The HIMSS data includes demographic and IT data for over 5,000 hospitals and the Hospital Compare data contains a wide range of CMS metrics and hospital demographic information publicly reported through the Hospital Compare website. 
+
+The HIMSS data is collected through the administration of a survey given to hospitals and their parent organizations. This survey is primarily completed by hospital employees with a high level of technical knowledge regarding the hospital's hardware and software systems. As a part of this survey, the parent hospital or organization responsible for the management of its member hospitals and other healthcare organizations are asked about some of the major goals of their IT strategic plan. These goals include: decreasing medical errors, reducing the number of software vendors, implementing computerized patient records, resolving integration issues, and migrating toward a paperless environment. The survey also asks the parent organization to indicate which member entities are driving the stated goal of the IS plan. 
+
+For the years 2009-2012 parent organizations responsible for one or more hospitals who have made it a goal of their IT strategic plan to decrease medical errors in four consecutive years (Hospitals with IT Plan Commitment, or "committed") were selected from the data. Similarly, those parent organizations who do not have a goal to decrease medical errors in four consecutive years (Hospitals without IT Plan Commitment, or "non-committed") were also selected. Once the parent organizations who are committed (or not committed) to reducing medical errors under their IT strategic plan are identified, the primary drivers of the IT strategic plan were examined and those organizations with plans driven by either all member hospitals or all facilities within the organization as a whole were identified. Parent organizations with plans driven by only the sub-acute or ambulatory facilities under their purview were removed. Also removed were any parent organizations where the member organizations driving the strategic plan could not be determined. This step was taken to increase the likelihood that member hospitals would be strategically working to reduce medical errors as a part of their parent organization’s overall IT strategic plan.
+
+Those hospitals that fall under the control of an organization that is either committed or not committed to reducing medical errors can be linked to metric information within the Hospital Compare day through the Medicare provider number. Metrics from the Hospital compare data for fiscal year 2016 (publicly reported in December 2016) were selected, since strategic IT plans are not implemented immediately and may take several years for their impact to be seen within a hospital and their processes that could potentially contribute to medical errors. Committed and non-committed hospitals without any available metric data within the Hospital Compare data are discarded. The CMS data collection period for the Hospital Acquired Condition reduction scores and PSI metrics is between 7/1/2012 and 6/30/2014 with reviews and corrections being accepted  between 7/16/2015 and 8/14/2015 [@cms:hac].   
+
+Summary statistics covering basic demographic information for the hospitals utilized in this research can be seen in Tables 1 and 2 below. 
+
+```{r eval=TRUE, echo=FALSE, results="asis"}
+pandoc.table(summaryTable.C, style = "rmarkdown", split.cells = "inf", split.tables = "inf", caption = paste("Hospitals *with* IT Plan Commitment,", "n = ", as.character(nrow(CommittedRows)), sep=" "))
+pandoc.table(summaryTable.NC, style = "rmarkdown", split.cells = "inf", split.tables = "inf", caption = paste("Hospitals *without* IT Plan Commitment,", "n = ", as.character(nrow(NonCommittedRows)), sep = " "))
+```
+
+T-tests to detect a difference in means between the committed and non-committed samples for each of the three demographic variables resulted in no significant differences with p-values of `r round(NofBeds.Diff$p.value, 2)`, `r round(NofSurgicalOperations.Diff$p.value, 2)`, and `r round(FullTimeEmployees.Diff$p.value, 2)`.
+
+Additionally, within the division of committed vs non-committed hospitals, we can further segment our samples based on the Hospital ownership type contained within the HIMSS data. This ownership type is one of four types: Government (non-federal), Investor-owned (for-profit), Non-government (not-for-profit), or Unknown/Not-reported. Analysis was performed to determine if there are any differences for the selected metrics between ownership types within the committed or non-committed groups as well as a comparison of scores between matching ownership groups across committed and non-committed groups. This analysis will help to determine if hospitals falling under one of the ownership groups are better able to leverage their dedication to reducing medical errors as part of their IT strategy. The hospitals used in this research are overwhelmingly from the Non-government (not-for-profit) group.
+
+												Committed (n)					Non-Committed (n)
+----------------------------------------------	------------------------------	------------------------------------------------
+`r C.OrgControlCount[1,1]`								`r C.OrgControlCount[1,2]`											`r NC.OrgControlCount[1,2]`
+`r C.OrgControlCount[2,1]`							`r C.OrgControlCount[2,2]`												`r NC.OrgControlCount[2,2]`
+`r C.OrgControlCount[3,1]`								`r C.OrgControlCount[3,2]`					`r NC.OrgControlCount[3,2]`
+Unknown/Not-reported												`r C.OrgControlCount[4,2]`												`r NC.OrgControlCount[4,2]`
+----------------------------------------------	------------------------------	-------------------------------------------------
+:Hospital Ownership Type
+
+### 2 Metrics
+
+The Hospital compare data provides a wide range of hospital metrics. We examine six PSI measures, including the PSI-90 composite measure. We also examine metrics utilized to summarize hospital acquired conditions within one domain of the HACRP program, and the resulting Total Hospital Acquired Condition score. This score weights other composite scores including the PSI-90 composite. The full list of measures utilized in this research can be seen in Table 4.
+
+Patient Safety Indicators (PSI) were developed by the Agency for Healthcare Research and Quality to capture information about events related to safety that may occur within a hospital after operations and other procedures. The non-composite measures allow hospitals to identify adverse events that may be occurring and provide a way to compare incident rates of these events across hospitals [@ahrq:psi]. For fiscal year 2016, the CMS includes within the Hospital Compare data hospitals scores for the five individual PSI listed in Table 4. These metrics cover events such as death after surgery, collapsed lungs, serious blood clots, wounds that are opened after surgery, and accidental cuts and tears as a result of treatment. Values other than PSI-90 are reported as the observed rate of the incident per 1000 surgical patients.     
+
+Measure Description														   Code			
+------------------------------------------------------------------------  ------------
+Deaths among patients with serious treatable complications after surgery  PSI-4			
+Collapsed lung due to medical treatment									  PSI-6			
+Serious blood clots after surgery										  PSI-12		
+A wound that splits open after surgery on the abdomen or pelvis		      PSI-14
+Accidental cuts and tears from medical treatment						  PSI-15
+Patient safety and adverse events composite								  PSI-90
+HAC Domain 2 Score														  D2
+Total HAC Score															  HAC
+------------------------------------------------------------------------  ------------
+: PSI and HAC Metrics
+
+The composite measure PSI-90 is an aggregate measure intended to monitor healthcare safety performance at the national and regional level. PSI-90 is composed of ten individual PSI components (03, 06, 08, 09, 10, 11, 12, 13, 14, and 15) with each component being prioritized with a different weight in the final score. From our selected measures PSI-06 (weight: 0.09736), PSI-12 (weight: 0.18429), PSI-14 (weight: 0.00890),  and PSI-15 (weight: 0.00815) are included in PSI-90 composite. The most heavily weighted PSI-90 components, PSI-11 (Postoperative respiratory failure, weight: 0.21544) and PSI-13 (Postoperative sepsis rate, weight: 0.24132) were not available in the Hospital Compare data for measurement [@ahrq:psi90].     
+ 
+The validity and effectiveness of PSI, especially the PSI-90 composite, to measure quality of care within hospitals is almost universally in doubt due to a lack of evidence linking the measures to actual quality or even patient perceptions of quality [@HuJordanRubinfeldSchreiberWatermanNerenz2016], [@RajaramBarnardBilimoria2015], [@Isaac2008]. Yet, these metrics are used for many purposes including the pay for performance HACRP discussed in this paper and compiled into consumer friendly "star ratings" published on the Hospital Compare website for consumer use. For these purposes, the broad coverage of the PSI-90 will serve as a good general indicator of patient safety (and presence of medical errors) in the presence or absence of a broad IT strategic goal.  
+
+The other composite measures utilized in this research are the HACRP Domain 2 score (D2) Total hospital acquired condition (HAC) score. For fiscal year 2016, the Domain 2 score is an average of three healthcare associated infection (HAI) measures: Central Line-Associated Bloodstream Infection (CLABSI), Catheter-Associated Urinary Tract Infection (CAUTI), and Surgical Site Infection (SSI). The Total HAC further combines the composite PSI-90 measure (Domain 1) with hospital acquired condition metrics scores (Domain 2) and is the sum of these two weighted components. For fiscal year 2016, the Total HAC score weights are 25% for Domain 1 and 75% for Domain 2 [@cms:fy2016hacresults].  
+
+The Total HAC score is of significant importance because performance under this metric is tied to a 1% reduction in Medicare payments for hospitals who fall within the lowest performing quartile (top 25%) for the measurement year. The validity of this measure has come under question [@WintersBharmalWilsonZhangEngineerDefoeBassDyPonovost2016], but for the purposes of this research and much like the PSI-90, the score can act as a benchmark to compare different hospitals. In fiscal year 2015, the HAC score cutoff was 7 and in fiscal year 2016 the cutoff was lowered to 6.75. This reduction resulted in a small increase of hospitals who were subject to a payment reduction [@cms:fy2016hacresults]. 
+
+Within our samples `r C.Reduction` committed hospitals are over this threshold and `r NC.Reduction` non-committed hospitals are over the threshold: 
+
+```{r eval=TRUE, echo=FALSE, results="asis"}
+pandoc.table(EligibleForReduction, style = "rmarkdown", split.cells = "inf", split.tables = "inf", caption = "Hospitals Eligible for 1% Medicare Payment Reduction in FY16")
+```
+
+### 3 Results
+Between the committed and non-committed hospital samples, a t-test was performed to detect whether or not a difference in means existed for the selected metric. For each selected measure the following null and alternative hypothesis was proposed:
+
+------------------------------------------------------------------------------------
+         H~0~: $\mu$~committed~ = $\mu$~non-committed~          
+         H~1~: $\mu$~committed~ $\neq$ $\mu$~non-committed~          
+------------------------------------------------------------------------------------
+:Research Hypothesis
+
+This analysis resulted in no significant findings that a difference existed between committed and non-committed hospitals for any of the selected metrics. Because no difference could be identified within the larger group of committed vs. non-committed hospitals, an analysis of variance (ANOVA) was performed to determine if any differences exist between ownership type groupings for each metric within the committed/non-committed groups.  
+
+Within the committed group of hospitals a significant difference in means was detected within the Domain 2 scores (p-value: < 0.001) and the Total HAC score (p-value: `r round(summary(C.HAC.aov)[[1]][["Pr(>F)"]][[1]], 4)`). A post-hoc analysis utilizing the Tukey HSD method indicates that for the Domain 2 and Total HAC scores, a difference in means exists between Government, non-federal and for profit-investor owned hospitals as well as a difference between Non-government, not for profit hospitals and investor owned hospitals. This difference existing for both scores is to be expected considering that the Domain 2 score accounts for 75% of the Total HAC score. In both cases the government and not-for profit hospitals on average have higher Domain 2 and Total HAC scores than investor owned hospitals. 
+
+For the non-committed group of hospitals, the only difference found among ownership groups can be seen within the PSI-4 measure (p-value: `r round(summary(NC.PSI4.aov)[[1]][["Pr(>F)"]][[1]], 4)`). This measure for the non-committed group is higher for government and not for profit hospitals than it is for investor owned hospitals.     
+
+Additionally, a Welch's two-sample t-test was conducted to compare all measures between committed and non-committed hospitals within each of the ownership type groups to determine if specific ownerships groups are better (or worse) on individual measures. While there was a large difference between the two sample sizes, the data in each sample fit the assumptions necessary for a valid Welch's t-test. Significant findings are summarized in Table 7 below. 
+
+```{r eval=TRUE, echo=FALSE, results="asis"}
+pandoc.table(groupTable, style = "rmarkdown", split.cells = "inf", split.tables = "inf", caption = "Ownership Type Differences Committed (C) vs. Non-committed (NC) hospitals")
+```
+
+These results show that hospitals under government, non-federal control who are not committed to reducing medical errors as a part of their IT strategic plan have a higher rate of deaths among patients who experience serious treatable complications after surgery. Investor-owned, for profit hospitals exhibit a difference in two metrics: PSI-12 (serious blood clots after surgery), and the Domain 2 composite measure for hospital acquired infections. Committed for-profit hospitals would appear to be performing worse on their PSI-12 metric, and performing better in their underlying Domain 2 metrics. 
+
+### 4 Discussion
+
+Hospitals with IT plan commitments to reduce medical errors as a whole did not exhibit any statistically significant increase for any metric used in this analysis. This result would seem to indicate that the mere inclusion of a desire to reduce medical errors within a strategic IT plan is not enough to increase quality as determed by specific patient safety and hospital acquired condition metrics used within the hospital. Specific details on strategic actions would need to be collected in order to further measure the impact on selected metrics. When this comparison was performed between the same ownership type groups, some differences could be detected for the government owned hospitals' rates of death among patients following surgery (PSI-4). Death may be considered the most significant expression of medical error and lower rates among hospitals who are committed to reducing medical errors is heartening. 
+
+Potentially negative higher Domain 2 and HAC scores within the committed hospital group can be seen for the government and non-profit hospitals when compared to profit driven hospitals. These findings suggest that privately owned, for profit hospitals who are committed to reducing medical errors are performing better on the broader, composite measures than the publically owned and non-profit hospitals. For the non-commited group of hospitals, the government and non-profit hospitals exhibit higher rates of death among patients following surgery than the investor owned hospitals. 
+
+This analysis comes to the conclusion that very little difference exists between hospitals who have an IT strategic goal committed to reducing medical errors and those that do not when measured using common Patient Saftety Indicator metrics and the Hospital Acquired Condition reduction score metrics. It is possible that hospitals that are commited to an IT strategic goal are not executing specific activities of that goal effectively or the non-commited hospitals are performing adequately without a stated goal to reduce errors. 
+
+### 5 Limitations and Further Research
+
+The metric data extracted from the Hospital Compare data source reported for fiscal year 16 was for the period 7/1/2012 and 6/30/2014. At the time of this paper CMS indicates that FY 17 data for the periods 7/1/2013 to 6/30/2015 should be available, but it is not contained within the appropriate database. The results of this analysis may be different with a longer time period between IT strategic plan implementation and performance measurement. 
+
+It is also likely that the actual implementation of a strategic goal most likely varies widely among hospitals, even hospitals under the control of the same parent organization. Identification of specific IT strategic goals intended to reduce medical errors and study of key strategies for successful healthcare technology implementations [@Box2010] should be researched further in order to provide a better link between IT strategy and the reduction of medical errors.
+
+\newpage
+### References

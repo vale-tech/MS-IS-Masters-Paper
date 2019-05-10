@@ -1,0 +1,109 @@
+---
+title: "My notes"
+output: html_document
+bibliography: "C:/Users/Vale/Google Drive/School/Masters Project/ThePaper/ThePaper/paperbib.bib"
+link-citations: true
+---
+
+# Questions
+- Are medical errors actually being reduced by hospitals that make it a goal of their IT plans to "reduce medical errors?"
+	- What technologies are commonly employed to address some measures? 
+	- Can I determine this from the Dorenfest data? 
+	- What measures used in "template paper"?
+	- What measure do I use?
+		- HAC?
+		- PSI
+- Do high costs of IT justify potentially increased payments - 1% reduction HAC
+
+# Literature
+
+- What is literature about IT strategic goals and reducing medical errors?
+- What measures are related to medical errors?
+- What is typical timeframe for a goal like this within an IT plan? 
+
+# Strategy
+- Inventory of IT Plan stated goals
+- Is there a difference between those who state it as a goal and those who do not? 
+
+# Data and Methods
+Dates: https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Downloads/HACRP-Matrix.pdf
+ 
+ FY 2016 Total HAC Cutoff was 6.75 - https://www.cms.gov/Newsroom/MediaReleaseDatabase/Fact-sheets/2015-Fact-sheets-items/2015-12-10-2.html
+
+
+[@HuJordanRubinfeldSchreiberWatermanNerenz2016, pp. 1-2] - This paper is a good "template"
+
+*the value of the global rating will depend
+on the extent to which one or both of 2 underlying scenarios apply: 
+(1) the measures and domains in the rating system include measures likely to be directly relevant to
+that patient’s future care experience; 
+(2) there is a strong general dimension or trait of quality that varies significantly from entity to entity (eg, hospital to hospital, doctor to doctor, health plan to health plan), and is reflectedin the specific quality measures or domains or sets of quality measures used in the global rating, so that one can predict the quality of a future experience accurately from the limited set of measures included in the global rating system  
+
+On the other hand, if the component quality
+metrics are not correlated, then the existence of a single
+underlying quality dimension is called into question, and
+patient decisions might only be made with confidence if
+the global rating system is based on directly applicable
+metrics  
+
+These findings raise questions about the assumptions
+that may be made when aggregating these items to form
+global quality ratings. The modest within-group correlations among these measures, particularly among safety
+and complication measures, suggest limited common
+variance among “process drivers” within the set and thus,
+potentially, the absence of a single underlying dimension
+to explain them. Similarly, the paucity of correlation
+between domains has implications for the utility of overall summary scores or ratings: a high summary rating
+may not be predictive of high quality in any specific
+domain, particularly in domains not directly reflected in
+one or more of the individual measures used in the
+aggregate.
+
+The low between-group correlations suggest the
+absence of any general hospital trait of high or low quality. Hospitals may be very good at some things and not
+good at others, but the pattern of correlations suggests
+that hospitals are not generally either good at everything,
+average at everything, or bad at everything. In some
+cases, measures assumed to run in the same direction in
+predicting quality showed contradictory results. For
+instance, one would expect a “good” quality hospital to
+have low rates on both perioperative pulmonary embolism/deep vein thrombosis (DVT; PSI-12) and mortality.
+However, the present analysis showed statistically significant negative relationships between PSI-12 and all
+mortality measures consistently (data not shown). It
+might be that aggressive testing for DVT (which can
+result in high DVT rates) avoided unexpected deaths
+from pulmonary embolism, and if that is the case, using
+both measures in the same way in calculating a composite
+
+*
+
+[@WernerBradlow2006] - More about lack of specificity in Hospital Compare Metrics
+
+Quality measures within hospital compare do not serve as a good indicator for the quality a patient might receive.
+These measures are not composed of speicific underlying trait. 
+See reason notes.
+
+[@McCulloughCaseyMoscovicePrasad2010] - this is another good template using the same data I have access to
+
+*First, reporting needed to be both prevalent and consistent across time.21 For example, we excluded surgical quality measures, because both the numbers of reporting hospitals and the sample means changed dramatically across time. Second, hospitals in the sample must report a substantial number of cases. We excluded, for example, acute myocardial infarction measures, because these data are based on relatively few cases in rural hospitals. Finally, the measures must be plausibly influenced by electronic health records or computerized physician order entry.
+
+We identified relationships between processquality measures and health IT systems through consultations with a wide range of experts, including physicians, nurses, and other providers; administrators; and health informatics practitioners and consultants.
+
+Ultimately, we focused on six process-quality measures. These included the percentage of heart failure patients given an angiotensinconverting enzyme (ACE) inhibitor or angiotensin II receptor blocker (ARB) for left ventricular systolic dysfunction; the percentage of smokers with heart failure and pneumonia, respectively, who were given smoking cessation advice; the percentage of pneumonia patients assessed and given pneumococcal vaccination if indicated; the percentage of pneumonia patients whose initial blood culture in the emergency department preceded their first dose of hospitaladministered antibiotics; and the percentage of pneumonia patients given the most appropriate initial antibiotic.
+
+These quality measures largely reflect the quality of hospitals' medication administration processes. Both computerized physician order entry and electronic health records are designed to capture and communicate information relevant to medication prescribing and delivery. We would have liked to study medication errors directly, but the necessary data are not available in a national panel.*
+
+**First, we did not study all of health ITs potential benefits. Second, we did not track important variations in the individual hospitals' health IT investments. Although we designed our empirical strategy to mitigate bias stemming from these omitted variables, the topic deserves further scrutiny.**
+
+
+[@MenendezRing2015] - possibly calculate revenue reduction by 1%
+
+*Beginning in fiscal year 2015, the federal HAC Reduction Program will require the Centers for Medicare &
+Medicaid Services (CMS) to reduce payments by 1%
+for hospitals that rank among the lowest-performing
+quartile with regard to HACs. The CMS recently released preliminary HAC scores and provisionally assigned penalties to hospitals with a score above 7*
+
+[@WintersBharmalWilsonZhangEngineerDefoeBassDyPonovost2016]
+
+****
+
